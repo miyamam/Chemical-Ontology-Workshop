@@ -1,0 +1,109 @@
+// 1.SensorReadingEvent
+.create-merge table SensorReadingEvent (
+    event_id: string,
+    event_type: string,
+    timestamp: datetime,
+    source: string,
+    sensor_id: string,
+    equipment_id: string,
+    production_line_id: string,
+    process_order_id: string,
+    tag_name: string,
+    measurement_type: string,
+    value: real,
+    unit: string,
+    normal_min: real,
+    normal_max: real,
+    alarm_low: real,
+    alarm_high: real,
+    is_within_normal: bool
+)
+
+// wait
+.alter table SensorReadingEvent policy retention ```{ "SoftDeletePeriod": "365.00:00:00", "Recoverability": "Enabled" }```
+
+// 2.ProcessAlarmEvent
+.create-merge table ProcessAlarmEvent (
+    event_id: string,
+    event_type: string,
+    timestamp: datetime,
+    source: string,
+    sensor_id: string,
+    equipment_id: string,
+    production_line_id: string,
+    process_order_id: string,
+    tag_name: string,
+    alarm_type: string,
+    severity: string,
+    threshold_value: real,
+    actual_value: real,
+    deviation_amount: real,
+    action_taken: string
+)
+
+// wait
+.alter table ProcessAlarmEvent policy retention ```{ "SoftDeletePeriod": "365.00:00:00", "Recoverability": "Enabled" }```
+
+//3.EquipmentStatusEvent
+.create-merge table EquipmentStatusEvent (
+    event_id: string,
+    event_type: string,
+    timestamp: datetime,
+    source: string,
+    equipment_id: string,
+    production_line_id: string,
+    equipment_name: string,
+    equipment_type: string,
+    previous_status: string,
+    new_status: string,
+    reason: string
+)
+
+//wait
+.alter table EquipmentStatusEvent policy retention ```{ "SoftDeletePeriod": "365.00:00:00", "Recoverability": "Enabled" }```
+
+//4.BatchPhaseTransitionEvent
+.create-merge table BatchPhaseTransitionEvent (
+    event_id: string,
+    event_type: string,
+    timestamp: datetime,
+    source: string,
+    process_order_id: string,
+    batch_number: string,
+    product_id: string,
+    production_line_id: string,
+    previous_phase: string,
+    new_phase: string,
+    sequence_number: int,
+    set_temperature: real,
+    set_pressure: real,
+    actual_temperature: real,
+    actual_pressure: real
+)
+
+//wait
+.alter table BatchPhaseTransitionEvent policy retention ```{ "SoftDeletePeriod": "365.00:00:00", "Recoverability": "Enabled" }```
+
+//5.QualityInspectionEvent
+.create-merge table QualityInspectionEvent (
+    event_id: string,
+    event_type: string,
+    timestamp: datetime,
+    source: string,
+    process_order_id: string,
+    batch_number: string,
+    product_id: string,
+    inspection_item: string,
+    measured_value: real,
+    spec_lower: real,
+    spec_upper: real,
+    pass_fail: string,
+    lot_number: string
+)
+
+//wait
+.alter table QualityInspectionEvent policy retention ```{ "SoftDeletePeriod": "365.00:00:00", "Recoverability": "Enabled" }```
+
+
+//6.confirmation
+.show tables | project TableName | order by TableName asc

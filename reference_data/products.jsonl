@@ -1,0 +1,12 @@
+{"product_id": "a00e1fc5-b68c-4da2-80d0-1a19f897f181", "name": "Polyethylene HD-5000", "grade": "premium", "spec_lower": 0.955, "spec_upper": 0.965, "unit": "g/cm³", "category": "polymer"}
+{"product_id": "f66c12cd-94f7-4e61-8425-3819729ffaef", "name": "Polyethylene LD-2000", "grade": "standard", "spec_lower": 0.918, "spec_upper": 0.928, "unit": "g/cm³", "category": "polymer"}
+{"product_id": "4c287959-a17b-4add-835a-a08f45a5ad29", "name": "Polypropylene GP-200", "grade": "standard", "spec_lower": 0.9, "spec_upper": 0.91, "unit": "g/cm³", "category": "polymer"}
+{"product_id": "4d8162e5-d90a-4201-8992-d19043224547", "name": "Polypropylene HP-400", "grade": "premium", "spec_lower": 0.905, "spec_upper": 0.915, "unit": "g/cm³", "category": "polymer"}
+{"product_id": "2b37584e-1b95-4d40-a9ae-92061e0a0530", "name": "Methyl Methacrylate", "grade": "industrial", "spec_lower": 99.0, "spec_upper": 99.9, "unit": "%", "category": "intermediate"}
+{"product_id": "f42e16ff-285c-46ed-9cbf-74070b66744b", "name": "Ethylene Glycol", "grade": "standard", "spec_lower": 99.5, "spec_upper": 100.0, "unit": "%", "category": "intermediate"}
+{"product_id": "431dee0a-6500-40ee-8fd5-2b820f2877f3", "name": "Toluene", "grade": "industrial", "spec_lower": 99.5, "spec_upper": 100.0, "unit": "%", "category": "solvent"}
+{"product_id": "24bef4a2-cb15-412f-b5ab-3d81487f8b58", "name": "Xylene Mixed", "grade": "standard", "spec_lower": 98.0, "spec_upper": 99.5, "unit": "%", "category": "solvent"}
+{"product_id": "14cdbdcf-fb8d-4427-9e8f-50d0035407e0", "name": "Acrylic Acid AA-100", "grade": "premium", "spec_lower": 99.5, "spec_upper": 99.9, "unit": "%", "category": "specialty"}
+{"product_id": "d2bdce2d-5863-461f-8287-ab8ed8c0f725", "name": "Epoxy Resin EP-300", "grade": "premium", "spec_lower": 180.0, "spec_upper": 195.0, "unit": "g/eq", "category": "specialty"}
+{"product_id": "28b7f1db-8387-42ee-aada-a14b28580602", "name": "Styrene Monomer", "grade": "industrial", "spec_lower": 99.5, "spec_upper": 100.0, "unit": "%", "category": "intermediate"}
+{"product_id": "c6f53ada-65b7-4b72-a9be-13378fb96f99", "name": "Vinyl Acetate Monomer", "grade": "standard", "spec_lower": 99.0, "spec_upper": 99.8, "unit": "%", "category": "intermediate"}
