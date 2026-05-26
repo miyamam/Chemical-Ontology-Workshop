@@ -27,3 +27,5 @@ Step4で作成した `[Prefix]_chemical_db` KQL テーブルに Kusto Python SDK
 4. エラーが出ていないことを確認しながら、セルを１つずつ順番に実行します
 
 5. Eventhouse (KQL Database)にデータが挿入されているか確認します
+
+Next: [Step6. オントロジーの作成](../Instruction/step06_Create_Ontology.md)

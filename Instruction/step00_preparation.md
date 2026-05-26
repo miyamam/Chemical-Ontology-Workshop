@@ -52,13 +52,13 @@ https://app.fabric.microsoft.com/groups/{workspaceId}/lakehouses/{artifactId}
 2. 右側の 「Database details」 カードの　Query URI　をコピーします。
 
 ## Workshop コンテンツ
-- [step0. 事前準備](./Instruction/step00_preparation.md)
-- [Step1. Lakehouse の作成](./Instruction/step01_Lakehouse_Creation.md)
-- [Step2. リファレンスデータのアップロード](./Instruction/step02_Upload_reference_data.md)
-- [Step3. Delta テーブルの作成](./Instruction/step03_Create_DeltaTable.md)
-- [Step4. Eventhouse（KQL Database）の作成](./Instruction/step04_Create_Eventhouse.md)
-- [Step5. イベントストリームの生成](./Instruction/step05_Generate_Eventstream.md)
-- [Step6. オントロジーの作成](./Instruction/step06_Create_Ontology.md)
-- [Step7. Data Agent の作成](./Instruction/step07_Create_DataAgent.md)
+- [step0. 事前準備](../Instruction/step00_preparation.md)
+- [Step1. Lakehouse の作成](../Instruction/step01_Lakehouse_Creation.md)
+- [Step2. リファレンスデータのアップロード](../Instruction/step02_Upload_reference_data.md)
+- [Step3. Delta テーブルの作成](../Instruction/step03_Create_DeltaTable.md)
+- [Step4. Eventhouse（KQL Database）の作成](../Instruction/step04_Create_Eventhouse.md)
+- [Step5. イベントストリームの生成](../Instruction/step05_Generate_Eventstream.md)
+- [Step6. オントロジーの作成](../Instruction/step06_Create_Ontology.md)
+- [Step7. Data Agent の作成](../Instruction/step07_Create_DataAgent.md)
 
 

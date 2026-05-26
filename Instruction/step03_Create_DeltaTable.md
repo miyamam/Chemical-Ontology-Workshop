@@ -22,3 +22,5 @@
 JSONLファイルをLakehouseテーブルに読み込むところで少し時間がかかります。RunningからCommand executedにステータスが変わるまで１分～数分かかることがあります。
 エクスプローラーからLakehouse→Schemas→dbo→Tablesに10テーブル生成されます。
 ![image3-6](./Media/image3-6.png)
+
+Next: [Step4. Eventhouse（KQL Database）の作成](../Instruction/step04_Create_Eventhouse.md)

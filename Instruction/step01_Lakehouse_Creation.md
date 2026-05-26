@@ -52,3 +52,5 @@ else:
 
 4. 作成されると下記のような画面が表示されます。
 ![image-3](./Media/image-3.png)
+
+- [Step2. リファレンスデータのアップロード](../Instruction/step02_Upload_reference_data.md)
