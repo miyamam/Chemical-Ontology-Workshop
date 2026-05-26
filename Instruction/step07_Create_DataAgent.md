@@ -1,32 +1,32 @@
-# Step7. DataAgent の作成
+# Step7. Data Agent の作成
 
 ##  1: Data Agent アイテムの作成
 
 1. **Fabric ポータル** にサインインし、対象ワークスペースを開く。
 2. ワークスペース画面上部の **＋ 新しいアイテム** をクリック。
-![alt text](image-21.png)
+![image6-21](./Media/image6-21.png)
 3. アイテム ギャラリーの検索ボックスに **`Data agent`** と入力。
 4. **Data agent** を選択。
-![alt text](image-22.png)
+![image7-22](./Media/image7-22.png)
 5. 名前に **`[Prefix]_ChemicalAgent`** を入力し、**作成**　をクリック。
-![alt text](image-23.png)
-![alt text](image-24.png)
+![image7-23](./Media/image7-23.png)
+![image7-24](./Media/image7-24.png)
 ---
 
 ##  2: オントロジーをデータソースとして接続
 
 1. Data Agent エディター画面で、左ペインの **＋ データの追加** をクリック。
-![alt text](image-25.png)
+![image7-25](./Media/image7-25.png)
 
 2. 左側のエクスプローラーの **<<** を開き、ワークスペースを選択。
 3. ワークスペース内のから **`[Prefix]_ChemicalOntology`** を選択。
-![alt text](image-26.png)
+![image7-26](./Media/image7-26.png)
 4. **追加**（Add）をクリックして確定。
-![alt text](image-28.png)
+![image7-28](./Media/image7-28.png)
 
 ##  3:　イベントハウスをデータソースとして接続
 1. Data Agent エディター画面で、上部の **＋ データの追加**（Add data source）をクリック。
-![alt text](image-27.png)
+![image7-27](./Media/image7-27.png)
 2. ワークスペース内から **`[Prefix]_chemical_db`** を選択。
 4. **追加**（Add）をクリックして確定。
 5. **`chemical_db`** のTablesのなかの各テーブルにチェックをいれます。
@@ -35,7 +35,7 @@
 - EquipmentStatusEvent
 - BatchPhaseTransitionEvent
 - QualityInspectionEvent
-![alt text](image-29.png)
+![image7-29](./Media/image7-29.png)
 
 接続後、Data Agent は以下のエンティティ型・プロパティ・リレーションシップを自動的に認識します。
 
@@ -64,7 +64,7 @@
 
 1. Data Agent エディター上部タブの **エージェントの指示** パネルを開く。
 2. 既存のテキストをクリアし、下記のテキストをそのまま貼り付け。
-![alt text](image-30.png)
+![image7-30](./Media/image7-30.png)
 
 ```text
 あなたは化学プラント運転管理アシスタントです。以下の化学プラントオントロジーにアクセスできます。
@@ -113,12 +113,9 @@ Data Agent のチャットペインで以下の質問を順に試し、期待さ
 | # | 質問 | テスト対象 |
 |---|------|------------|
 | 1 | 現在アラームが発報しているセンサーはありますか？ | ProcessAlarmEvent + Sensor のトラバーサル |
-| 2 | 直近で品質不合格になったバッチはどれですか？ | QualityResult → ProcessOrder → Product |
-| 4 | Ethylene Line A の反応器の現在温度は？ | SensorReadingEvent → Equipment → ProductionLine |
-| 5 | 最もダウンタイムが長い設備はどれですか？ | FailureEvent → Equipment（downtime_hours 集計） |
-| 6 | プロセス逸脱からの根本原因分析結果を教えてください | ProcessDeviation → FailureEvent → RootCause |
-| 7 | 現在実行中のバッチの進捗状況は？ | ProcessOrder + OperationPhase（status フィルタ） |
-| 8 | メンテナンス中の設備はどれですか？ | Equipment（status="maintenance" フィルタ） |
+| 2 | 直近で品質不合格になったバッチはどれですか？ | QualityResult → ProcessOrder → Product ||
+| 3 | 最もダウンタイムが長い設備はどれですか？ | FailureEvent → Equipment（downtime_hours 集計） |
+
 
 ---
 

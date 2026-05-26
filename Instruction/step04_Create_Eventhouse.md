@@ -1,4 +1,4 @@
-# Step 4. Eventhouse（KQL Database）の作成
+# Step4. Eventhouse（KQL Database）の作成
 
 ワークスペースにEventhouse（KQL Database）を作成します。
 Lakehouse のリファレンスデータを読み込み、化学プラント向けのリアルタイムイベントストリームを生成して Eventhouse（KQL Database）に取り込みます。
