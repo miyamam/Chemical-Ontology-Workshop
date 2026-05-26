@@ -15,7 +15,11 @@
 - [Step7. Data Agent の作成](./Instruction/step07_Create_DataAgent.md)
 
 ## Notebook
-Notebook フォルダには Workshop 内で使用する Notebook が格納されています。
+Notebook フォルダには Workshop 内で使用する(かもしれない) Notebook が格納されています。
+- 03_load_reference_data
+- 05_generate_events
+
+- 00_AutoCreation（全自動スクリプト）
 
 ## Others
 このWorkshopデータの[ER図](./Others/chemical_er_diagram.md)が格納されています。
