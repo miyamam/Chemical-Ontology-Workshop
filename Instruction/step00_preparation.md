@@ -19,6 +19,32 @@
 **3-5は Azure OpenAI によるリージョン外データ処理を伴います。有効化する前に、組織のデータ所在地及びコンプライアンスポリシーを確認してください。**
 
 
+## このワークショップでの命名規則
+- **Prefix** を決めます。(イニシャル２文字など参加者間で重複しないものを決めます。例：MS)
+- [Prefix]_lh_chemical
+- [Prefix]_eh_chemical
+- [Prefix]_chemical_db
+- [Prefix]_ChemicalOntology
+- [Prefix]_ChemicalAgent
+
+## 使用する Notebook 及びリファレンスデータのダウンロード
+- [Notebooks](../Notebooks/)フォルダの[03_load_reference_data.ipynb](../Notebooks/03_load_reference_data.ipynb)および[05_generate_events.ipynb](../Notebooks/05_generate_events.ipynb)をダウンロードします。これらのファイルはStep3およびStep5で使用します。
+- [reference_data](../reference_data/)フォルダにある10個のJSONLファイルをダウンロードします。このファイルは[step2](../Instruction/step02_Upload_reference_data.md)で使用します。
+
+|#|JSONLファイル名|内容|
+|---|---|---|
+|1|[equipment](../reference_data/equipment.jsonl)|設備|
+|2|[failure_events](../reference_data/failure_events.jsonl)|故障イベント|
+|3|[operation_phases](../reference_data/operation_phases.jsonl)|オペレーションフェーズ|
+|4|[process_deviations](../reference_data/process_deviations.jsonl)|プロセス逸脱|
+|5|[process_orders](../reference_data/process_orders.jsonl)|プロセスオーダー|
+|6|[production_lines](../reference_data/production_lines.jsonl)|製造ライン|
+|7|[products](../reference_data/products.jsonl)|製品|
+|8|[quality_results](../reference_data/quality_results.jsonl)|品質検査結果|
+|9|[root_causes](../reference_data/quality_results.jsonl)|根本原因|
+|10|[sensors](../reference_data/sensors.jsonl)|センサー|
+
+
 
 ## Notebook で作業を行う際の準備
 ### Fabric ワークスペースのGUID及びワークスペース名の取得

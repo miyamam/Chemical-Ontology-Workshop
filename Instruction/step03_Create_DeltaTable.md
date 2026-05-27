@@ -23,4 +23,8 @@ JSONLファイルをLakehouseテーブルに読み込むところで少し時間
 エクスプローラーからLakehouse→Schemas→dbo→Tablesに10テーブル生成されます。
 ![image3-6](./Media/image3-6.png)
 
+## Notebookを使用しない場合
+1. [reference_data_parquet](../reference_data_parquet/) フォルダの10ファイルをダウンロードし、LakehouseのFilesにアップロードします。
+2. アップロードしたファイルの...を右クリック→テーブルに読み込む→新しいテーブル　を実行して10テーブル読み込みます。
+
 Next: [Step4. Eventhouse（KQL Database）の作成](../Instruction/step04_Create_Eventhouse.md)

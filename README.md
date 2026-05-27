@@ -2,7 +2,9 @@
 
 このリポジトリは[Building an Ontology in Microsoft Fabric: A Trucking Domain Walkthrough](https://github.com/robkerr/trucking-ontology) をもとに化学プラントのオントロジー作成を手作業で行うWorkshopとして組み替えたものです。
 
-作成時のUIの操作方法及び操作画面を使用しています。
+*本情報の内容（添付文書、リンク先などを含む）は、作成日時点でのものであり、予告なく変更される場合があります。*
+
+![Overview](./Instruction/Media/overview.png)
 
 ## Workshop コンテンツ
 - [step0. 事前準備](./Instruction/step00_preparation.md)
@@ -16,10 +18,17 @@
 
 ## Notebook
 Notebook フォルダには Workshop 内で使用する(かもしれない) Notebook が格納されています。
-- 03_load_reference_data
-- 05_generate_events
+- [03_load_reference_data](./Notebooks/03_load_reference_data.ipynb)
+- [05_generate_events](./Notebooks/05_generate_events.ipynb)
 
-- 00_AutoCreation（全自動スクリプト）
+- [00_AutoCreation（全自動スクリプト）](./Notebooks/00_AutoCreation.ipynb)
+
+## reference_data
+[Step2. リファレンスデータのアップロード](./Instruction/step02_Upload_reference_data.md)および[Step3. Delta テーブルの作成](./Instruction/step03_Create_DeltaTable.md)で使用するデータ
+
+## reference_data_parquet
+上記データのparquet版ファイル。Notebookを使わずに手動取り込みが可能。
 
 ## Others
 このWorkshopデータの[ER図](./Others/chemical_er_diagram.md)が格納されています。
+
