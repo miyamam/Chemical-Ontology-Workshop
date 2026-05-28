@@ -41,7 +41,7 @@
 |6|[production_lines](../reference_data/production_lines.jsonl)|製造ライン|
 |7|[products](../reference_data/products.jsonl)|製品|
 |8|[quality_results](../reference_data/quality_results.jsonl)|品質検査結果|
-|9|[root_causes](../reference_data/quality_results.jsonl)|根本原因|
+|9|[root_causes](../reference_data/root_causes.jsonl)|根本原因|
 |10|[sensors](../reference_data/sensors.jsonl)|センサー|
 
 
