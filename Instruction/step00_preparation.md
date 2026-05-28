@@ -21,11 +21,11 @@
 
 ## このワークショップでの命名規則
 - **Prefix** を決めます。(イニシャル２文字など参加者間で重複しないものを決めます。例：MS)
-- [Prefix]_lh_chemical
-- [Prefix]_eh_chemical
-- [Prefix]_chemical_db
-- [Prefix]_ChemicalOntology
-- [Prefix]_ChemicalAgent
+- [Prefix]_lh_chemical　(レイクハウス)
+- [Prefix]_eh_chemical　（イベントハウス）
+- [Prefix]_chemical_db　（KQL Database）
+- [Prefix]_ChemicalOntology　（オントロジー）
+- [Prefix]_ChemicalAgent　（Data Agent）
 
 ## 使用する Notebook 及びリファレンスデータのダウンロード
 - [Notebooks](../Notebooks/)フォルダの[03_load_reference_data.ipynb](../Notebooks/03_load_reference_data.ipynb)および[05_generate_events.ipynb](../Notebooks/05_generate_events.ipynb)をダウンロードします。これらのファイルはStep3およびStep5で使用します。
@@ -46,7 +46,8 @@
 
 
 
-## Notebook で作業を行う際の準備
+## （参考）Notebook で作業を行う際の準備
+Step3でNotebookを実行するとき及び、全部のリソースを自動生成するときの手順となります。
 ### Fabric ワークスペースのGUID及びワークスペース名の取得
 1. Fabric ポータルで対象のワークスペースを開き、URLをメモします。
 例
@@ -60,7 +61,7 @@ https://app.fabric.microsoft.com/groups/d995c964-321b-4486-9a11-fc23428ef52c/lis
 2. ワークスペース名はポータルで表示されている名称をメモします。
 
 ### Fabric Lakehouse ID の取得
-1. Lakehouse を開いた状態でブラウザのURLをメモします。
+1. Lakehouse を開いた状態でブラウザのURLをメモします。（LakehouseはStep1で作成予定）
 例
 ```
 https://app.fabric.microsoft.com/groups/d995c964-321b-4486-9a11-fc23428ef52c/lakehouses/912ed674-bdf6-4240-82ae-dd0556e63a9d?experience=fabric-developer&selectedPath=Files
@@ -74,7 +75,7 @@ https://app.fabric.microsoft.com/groups/{workspaceId}/lakehouses/{artifactId}
 ```
 
 ### Kusto URI の取得方法
-1. Fabricポータルで→ Workspace → Eventhouse → 対象の KQL Databaseを開く
+1. Fabricポータルで→ Workspace → Eventhouse → 対象の KQL Databaseを開く（イベントハウスはStep4で作成予定）
 2. 右側の 「Database details」 カードの　Query URI　をコピーします。
 
 ## Workshop コンテンツ
